@@ -1,0 +1,9 @@
+# this is a shell script which will be sourced at boot
+hostname VM1
+# configurable user account
+USERNAME=cisco
+PASSWORD=cisco
+
+ip address add 192.168.10.10/24 dev eth0
+ip link set eth0 up
+ip route add default via 192.168.10.1
